@@ -16,4 +16,4 @@ nvm install node
 echo 'starting mongo'
 sudo systemctl start mongod
 echo 'starting app'
-node ./bin/www
+node ./bin/www &> /dev/null &
