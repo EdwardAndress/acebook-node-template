@@ -60,6 +60,7 @@ jobs:
           --deployment-config-name CodeDeployDefault.OneAtATime \
           --deployment-group-name production \
           --region us-east-2 \
+          --file-exists-behavior OVERWRITE \
           --s3-location "bucket=continuously-eddie, bundleType=zip, key=acebook-${{ github.sha }}.zip"
 
         
